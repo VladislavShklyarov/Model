@@ -46,7 +46,7 @@ plt.title('Сравнение моделей Ферхюльста\nбез эфф
 plt.xlabel('Время (лет)')
 plt.ylabel('Численность популяции P(t)')
 
-param_text = f'Параметры:\nr = {r}\nK = {K}\nl = {l}\nP0 = {P0}'
+param_text = f'Параметры:\nr = {r}\nK = {K}\nl = {A}\nP0 = {P0}'
 plt.text(1.005, 0.2, param_text, transform=plt.gca().transAxes, fontsize=12, verticalalignment='top', bbox=dict(facecolor='white', alpha=0.5))
 
 plt.legend()
