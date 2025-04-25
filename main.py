@@ -34,7 +34,7 @@ sol_allee = solve_ivp(
     fun=allee,
     t_span=(t_start, t_end),
     y0=[P0],
-    args=(r, K, l),
+    args=(r, K, A),
     t_eval=t_eval
 )
 
@@ -46,7 +46,6 @@ plt.title('Сравнение моделей Ферхюльста\nбез эфф
 plt.xlabel('Время (лет)')
 plt.ylabel('Численность популяции P(t)')
 
-# Добавляем текст с параметрами в график
 param_text = f'Параметры:\nr = {r}\nK = {K}\nl = {l}\nP0 = {P0}'
 plt.text(1.005, 0.2, param_text, transform=plt.gca().transAxes, fontsize=12, verticalalignment='top', bbox=dict(facecolor='white', alpha=0.5))
 
